@@ -1,7 +1,8 @@
 # Apresentação: Gerador de Senhas Padronizadas
 
 ## 1. Visão Geral
-O objetivo principal da solução é fornecer aos analistas de Service Desk uma ferramenta para obter regras de senha específicas de operações (clientes/projetos) e gerar senhas seguras e compatíveis com essas regras. [Ver na Web](Gerador de Senhas por Operação)
+O objetivo principal da solução é fornecer aos analistas de Service Desk uma ferramenta para obter regras de senha específicas de operações (clientes/projetos) e gerar senhas seguras e compatíveis com essas regras. [Ver na Web](https://passgensd.vercel.app)
+[Código no GitHub](https://github.com/gustavo-marcialis/password-generator)
 
 ## 2. O Problema
 Durante minha atuação como analista de Service Desk na operação da Seguros Unimed, detectei um retrabalho e gargalo ao gerar senhas no padrão da operação para realizar os resets de senha. Na nossa rotina de trabalo, utilizamos o site Roboform para gerar as senhas para os resets, porém, ao desligar o computador, é necessário configurar do zero a política de senhas para começar a gerar as senhas no padrão desejado. Isso resulta em retrabalho manual e aumento no TMA, principalmente para analistas que atuam em mais de uma operação ao mesmo tempo.
