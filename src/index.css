@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* COR ATUALIZADA AQUI */
+    --primary: 202 100% 51%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 142 71% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    
+    /* COR DO ANEL (FOCO) ATUALIZADA AQUI */
+    --ring: 202 100% 51%;
+
+    --radius: 0.75rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(202 100% 51%), hsl(202 90% 62%)); /* Gradiente atualizado */
+    --gradient-accent: linear-gradient(135deg, hsl(142 71% 45%), hsl(158 64% 52%));
+    --gradient-subtle: linear-gradient(180deg, hsl(210 20% 98%), hsl(220 14% 96%));
+    
+    --shadow-sm: 0 2px 4px hsl(202 100% 51% / 0.08); /* Sombra atualizada */
+    --shadow-md: 0 4px 12px hsl(202 100% 51% / 0.12); /* Sombra atualizada */
+    --shadow-lg: 0 8px 24px hsl(202 100% 51% / 0.16); /* Sombra atualizada */
+    
+    --transition-base: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 217 33% 17%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 217 33% 17%;
+    --popover-foreground: 210 40% 98%;
+
+    /* COR ATUALIZADA AQUI (DARK) */
+    --primary: 202 100% 51%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 142 71% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    
+    /* COR DO ANEL (FOCO) ATUALIZADA AQUI (DARK) */
+    --ring: 202 100% 51%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(202 100% 51%), hsl(202 90% 62%)); /* Gradiente atualizado */
+    --gradient-accent: linear-gradient(135deg, hsl(142 71% 45%), hsl(158 64% 52%));
+    --gradient-subtle: linear-gradient(180deg, hsl(222 47% 11%), hsl(217 33% 17%));
+    
+    --shadow-sm: 0 2px 4px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 12px hsl(0 0% 0% / 0.4);
+    --shadow-lg: 0 8px 24px hsl(0 0% 0% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
